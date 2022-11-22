@@ -44,7 +44,7 @@ function Home() {
                             <h1 className='testclient'>
                                 Testeador 1 
                             </h1>
-                            <Link to={`${index}/${item.cliente}/${item.linkVideo.replace(/^https?:\/\//, '').split('.')[0]}/testeador1`} >
+                            <Link to={`${index}/${item.cliente}/${item.idVideo}/testeador1`} >
                                 <button className='gototest'>Ir al test</button>
                             </Link>
                         </div>
