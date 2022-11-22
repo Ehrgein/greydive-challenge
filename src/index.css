@@ -220,6 +220,11 @@ html {
   height: 36px;
 }
 
+.testbody {
+  width: 100vw;
+  height: 100vh;
+}
+
 .title {
   background-color: #292643;
   overflow: hidden;

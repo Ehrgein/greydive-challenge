@@ -4,7 +4,7 @@ import Header from '../components/Header'
 
 function TestPage() {
   return (
-    <div>
+    <div className='testbody'>
         <Header/>
         <Test/>
     </div>
