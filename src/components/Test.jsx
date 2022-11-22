@@ -8,14 +8,14 @@ function TestData() {
   const cleantranscript = db[testid].transcripcion.replaceAll("<br>", "\n");
 
   return (
-    <div className="testingcontent">
+    <section className="testingcontent">
       <div className="testdata">
         <div className="clientinfo">
           <h1 className="clientname">Cliente: {db[testid].cliente}</h1>
-          <h1 className="clientname">
+          <span className="clientname">
             Test: Test de usabilidad en el {db[testid].id}
-          </h1>
-          <h1 className="testername"> Testeador 1 </h1>
+          </span>
+          <span className="testername"> Testeador 1 </span>
           <video
             className="video"
             controls="controls autoplay"
@@ -24,7 +24,7 @@ function TestData() {
           />
         </div>
 
-        <h1 className="transcription">Transcripción</h1>
+        <span className="transcription">Transcripción</span>
 
         <div className="transcriptiontxt">{cleantranscript}</div>
         <div className="transcription">
@@ -52,7 +52,7 @@ function TestData() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
