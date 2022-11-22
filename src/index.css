@@ -223,25 +223,39 @@ html {
 
 .testbody {
   width: 100vw;
-  height: 100vh;
+  height: auto;
+  background-image: linear-gradient(180deg, #292643, #41416d);
 }
 
 .title {
-  background-color: #292643;
   overflow: hidden;
   height: auto;
   object-fit: fill;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  padding-bottom: 22px;
 }
 
-.containermenu {
-  width: 1100px;
-  max-width: 1100px;
-  margin-right: 0;
-  margin-left: -19px;
-  padding-bottom: 20px;
+@media screen and (min-width: 1024px) {
+  .containermenu {
+    width: 1024px;
+    max-width: 1024px;
+    margin: 0;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .containermenu {
+    width: 1100px;
+    max-width: 1100px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: start;
+  }
 }
 
 .navbar {
@@ -266,13 +280,11 @@ html {
 }
 
 .testingcontent {
-  background-color: #292643;
   overflow: hidden;
   max-width: 100%;
   padding-bottom: 140px;
   display: flex;
   justify-content: center;
-  background-image: linear-gradient(180deg, #292643, #41416d);
 }
 
 .testdata {
@@ -280,12 +292,48 @@ html {
   width: 1100px;
   max-width: 1100px;
   margin-right: 0;
-  margin-left: -19px;
   padding-bottom: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
+}
+
+.clientinfo {
+}
+
+@media screen and (min-width: 320px) {
+  .clientinfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .testdata {
+    width: 900px;
+    max-width: 900px;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .testdata {
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .testdata {
+    width: 1100px;
+    max-width: 1100px;
+    align-items: start;
+  }
+  .clientinfo {
+    align-items: start;
+  }
 }
 
 .clientname {
@@ -429,6 +477,41 @@ html {
 .video {
   max-width: 1100px;
   width: 1100px;
+}
+
+@media screen and (min-width: 320px) {
+  .video {
+    max-width: 300px;
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 420px) {
+  .video {
+    max-width: 400px;
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .video {
+    max-width: 748px;
+    width: 748px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .video {
+    max-width: 760px;
+    width: 760px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .video {
+    max-width: 1100px;
+    width: 1100px;
+  }
 }
 
 @font-face {

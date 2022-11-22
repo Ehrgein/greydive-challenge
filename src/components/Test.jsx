@@ -10,17 +10,20 @@ function TestData() {
   return (
     <div className="testingcontent">
       <div className="testdata">
-        <h1 className="clientname">Cliente: {db[testid].cliente}</h1>
-        <h1 className="clientname">
-          Test: Test de usabilidad en el {db[testid].id}
-        </h1>
-        <h1 className="testername"> Testeador 1 </h1>
-        <video
-          className="video"
-          controls="controls autoplay"
-          src={db[testid].linkVideo}
-          type="video/mp4"
-        />
+        <div className="clientinfo">
+          <h1 className="clientname">Cliente: {db[testid].cliente}</h1>
+          <h1 className="clientname">
+            Test: Test de usabilidad en el {db[testid].id}
+          </h1>
+          <h1 className="testername"> Testeador 1 </h1>
+          <video
+            className="video"
+            controls="controls autoplay"
+            src={db[testid].linkVideo}
+            type="video/mp4"
+          />
+        </div>
+
         <h1 className="transcription">Transcripción</h1>
 
         <div className="transcriptiontxt">{cleantranscript}</div>
