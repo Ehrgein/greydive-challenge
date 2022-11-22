@@ -9,6 +9,7 @@ function Home() {
         <div className="homenav">
           <div className="logocontainer">
             <img
+              alt="greydive logo"
               className="homeimage"
               src="https://uploads-ssl.webflow.com/612fcc289671bc539ecd004e/612ff6936ef1a98f2a9b29cf_logo-greydive-gris.png"
             />
@@ -16,20 +17,32 @@ function Home() {
           <div className="navitems">
             <div className="itemcontainer">
               <a
+                target="_blank"
+                rel="noreferrer"
                 className="link"
                 href="https://www.greydive.com/sobre-nosotros"
               >
-                <h1 className="navitem"> Sobre nosotros </h1>
+                <span className="navitem"> Sobre nosotros </span>
               </a>
             </div>
             <div className="itemcontainer">
-              <a className="link" href="https://www.greydive.com/blog">
-                <h1 className="navitem"> Blog </h1>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                className="link"
+                href="https://www.greydive.com/blog"
+              >
+                <span className="navitem"> Blog </span>
               </a>
             </div>
             <div className="conversemoscontainer">
-              <a className="link" href="https://www.greydive.com/#contactoHome">
-                <h1 className="conversemosbutton"> Conversemos </h1>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                className="link"
+                href="https://www.greydive.com/#contactoHome"
+              >
+                <button className="conversemosbutton"> Conversemos </button>
               </a>
             </div>
           </div>
