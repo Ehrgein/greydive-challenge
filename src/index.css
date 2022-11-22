@@ -1,57 +1,125 @@
 body {
   margin: 0;
   min-height: 100%;
-  font-family:'Arial,'Helvetica Neue',Helvetica,sans-serif';
+  font-family: "Arial," Helvetica Neue ",Helvetica,sans-serif";
   background: #ffff;
   padding-top: 0;
   color: #333;
   font-size: 14px;
   line-height: 20px;
   box-sizing: border-box;
-  display: block;
+  display: flex;
 }
 
 html {
   -webkit-text-size-adjust: 100%;
 }
 
-.homepagediv{
+.homepagediv {
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(180deg,#131313,#292929 100%,#292929);
+  background-image: linear-gradient(180deg, #131313, #292929 100%, #292929);
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
 
-.homepagecontainer{
-  min-width: 1100px;
+.homepagecontainer {
   display: flex;
   justify-content: center;
   padding-top: 20px;
   flex-direction: column;
 }
 
-.homenav{
-  max-width: 1100px;
-  width: 1100px;
+.homenav {
   padding-top: 50px;
   display: flex;
   justify-content: space-between;
 }
 
-.testingmessage{
+.testingmessage {
   display: flex;
   justify-content: center;
   color: white;
-  font-family: 'gotham', 'Arial Narrow', Arial, sans-serif;
+  font-family: "gotham", "Arial Narrow", Arial, sans-serif;
   margin-top: 200px;
-  font-size: 20px;
 }
 
-.testlist{
+@media screen and (min-width: 768px) {
+  .testingmessage {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .testingmessage {
+    font-size: 20px;
+  }
+}
+
+.testcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 320px) {
+  .testcontainer {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .testcontainer {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .homepagecontainer {
+    min-width: 700px;
+    width: 700px;
+    max-width: 700px;
+    display: flex;
+  }
+  .homenav {
+    min-width: 700px;
+    width: 700px;
+    max-width: 700px;
+    display: flex;
+  }
+  .testcontainer {
+    min-width: 700px;
+    width: 700px;
+    max-width: 700px;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .homepagecontainer {
+    min-width: 1100px;
+    width: 1100px;
+    max-width: 1100px;
+    display: flex;
+  }
+  .homenav {
+    min-width: 1100px;
+    width: 1100px;
+    max-width: 1100px;
+    display: flex;
+  }
+  .testcontainer {
+    min-width: 1100px;
+    width: 1100px;
+    max-width: 1100px;
+    display: flex;
+  }
+}
+
+.testlist {
   margin-top: 40px;
-  font-family: 'gotham', 'Arial Narrow', Arial, sans-serif;
+  font-family: "gotham", "Arial Narrow", Arial, sans-serif;
   color: white;
   max-width: 300px;
   width: 300px;
@@ -62,24 +130,15 @@ html {
   align-items: center;
 }
 
-.testcontainer{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  min-width: 1100px;
-  width: 1100px;
-}
-
-.testclient{
+.testclient {
   text-transform: capitalize;
   font-size: 20px;
 }
 
-.gototest{
+.gototest {
   background-color: #d4145a;
   width: 150px;
-  font-family: 'gotham', 'Arial Narrow', Arial, sans-serif;
+  font-family: "gotham", "Arial Narrow", Arial, sans-serif;
   text-align: center;
   border: 0;
   height: 20px;
@@ -87,37 +146,55 @@ html {
   color: white;
 }
 
-.link{
+.link {
   text-decoration: none;
   color: white;
 }
 
-
-.navitems{
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  color: white;
+.navitems {
+  display: none;
 }
 
-.itemcontainer{
+@media screen and (min-width: 320px) {
+  .logocontainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navitems {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    color: white;
+  }
+  .logocontainer {
+    display: flex;
+    width: 170px;
+    height: 36px;
+  }
+}
+
+.itemcontainer {
   height: 40px;
   padding-right: 20px;
 }
 
-.navitem{
+.navitem {
   font-size: 1rem;
   font-weight: 500;
-  font-family: 'gotham', 'Arial Narrow', Arial, sans-serif;
+  font-family: "gotham", "Arial Narrow", Arial, sans-serif;
   width: auto;
   height: auto;
 }
 
-.navitem:hover{
+.navitem:hover {
   color: #d4145a;
 }
 
-.conversemoscontainer{
+.conversemoscontainer {
   width: 150px;
   margin-top: 0;
   margin-right: auto;
@@ -130,20 +207,18 @@ html {
   background-color: #d4145a;
 }
 
-.conversemosbutton{
+.conversemosbutton {
   font-weight: 500;
   font-size: 1rem;
-  font-family: 'gotham', 'Arial Narrow', Arial, sans-serif;
+  font-family: "gotham", "Arial Narrow", Arial, sans-serif;
   width: auto;
   height: auto;
 }
 
-.homeimage{
+.homeimage {
   width: 170px;
   height: 36px;
 }
-
-
 
 .title {
   background-color: #292643;
@@ -155,7 +230,7 @@ html {
   align-items: flex-end;
 }
 
-.containermenu{
+.containermenu {
   width: 1100px;
   max-width: 1100px;
   margin-right: 0;
@@ -163,38 +238,38 @@ html {
   padding-bottom: 20px;
 }
 
-.navbar{
+.navbar {
   display: inline-block;
   min-width: 1100px;
   margin-right: 0;
 }
 
-.navbartext{
+.navbartext {
   position: relative;
   float: left;
   text-decoration: none;
-  color:white;
+  color: white;
   color: #f2f2f2;
   font-weight: 800;
 }
 
-.logoimg{
+.logoimg {
   width: 170px;
   height: 33px;
   padding-top: 50px;
 }
 
-.testingcontent{
-    background-color: #292643;
-    overflow: hidden;
-    max-width: 100%;
-    padding-bottom: 140px;
-    display: flex;
-    justify-content: center;
-    background-image: linear-gradient(180deg,#292643,#41416d);
+.testingcontent {
+  background-color: #292643;
+  overflow: hidden;
+  max-width: 100%;
+  padding-bottom: 140px;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(180deg, #292643, #41416d);
 }
 
-.testdata{
+.testdata {
   padding-top: 80px;
   width: 1100px;
   max-width: 1100px;
@@ -207,28 +282,27 @@ html {
   align-items: start;
 }
 
-.clientname{
+.clientname {
   color: white;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 700;
   font-size: 2rem;
   margin-bottom: 10px;
   line-height: 44px;
 }
 
-.testername{
+.testername {
   color: white;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
   margin-bottom: 10px;
   line-height: 44px;
 }
 
-
-.transcription{
+.transcription {
   color: white;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 400;
   font-size: 2rem;
   line-height: 44px;
@@ -236,7 +310,7 @@ html {
   margin-bottom: 40px;
 }
 
-.transcriptiontxt{
+.transcriptiontxt {
   color: white;
   max-width: 600px;
   max-height: 300px;
@@ -249,16 +323,15 @@ html {
   font-size: 16px;
   line-height: 1.4rem;
   font-size: 400;
-  font-family: 'gotham', 'Arial Narrow', Arial, sans-serif;
-  white-space: pre-wrap; 
+  font-family: "gotham", "Arial Narrow", Arial, sans-serif;
+  white-space: pre-wrap;
   text-decoration: none;
   text-transform: none;
 }
 
-
 .tareas {
   color: white;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 400;
   font-size: 2rem;
   line-height: 44px;
@@ -266,43 +339,43 @@ html {
   margin-bottom: 40px;
 }
 
-.infotarea{
-    display: block;
-    overflow: visible;
-    max-height: 300px;
-    max-width: 500;
-    margin-bottom: 0px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    font-family: 'gotham', 'Arial Narrow', Arial, sans-serif;
-    color: white;
-    font-size: 1rem;
-    line-height: 1.4rem;
-    font-weight: 700;
-    text-decoration: none;
-    text-transform: none;
-    border-style: solid none none;
-    border-width: 1px 1px 1px 0;
-    border-color: #fff #000 #000 #2e2e2e;
-    margin-top: 20px;
-    padding: 20px 20px 0;
-    white-space: pre-wrap;
+.infotarea {
+  display: flex;
+  overflow: visible;
+  max-height: 300px;
+  max-width: 500;
+  margin-bottom: 0px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  font-family: "gotham", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: none;
+  border-style: solid none none;
+  border-width: 1px 1px 1px 0;
+  border-color: #fff #000 #000 #2e2e2e;
+  margin-top: 20px;
+  padding: 20px 20px 0;
+  white-space: pre-wrap;
 }
 
-.taskcontainer{
+.taskcontainer {
   max-width: 500px;
 }
 
-.respuesta{
-  display: block;
+.respuesta {
+  display: flex;
   overflow: visible;
   max-height: 300px;
   max-width: 500;
   margin-bottom: 0px;
   padding-right: 20px;
   padding-left: 20px;
-  font-family: 'gotham', 'Arial Narrow', Arial, sans-serif;
+  font-family: "gotham", "Arial Narrow", Arial, sans-serif;
   color: white;
   font-size: 1rem;
   line-height: 1.4rem;
@@ -313,14 +386,13 @@ html {
   margin-top: -5px;
 }
 
-
-.escenario{
-  display: block;
+.escenario {
+  display: flex;
   overflow: visible;
   max-height: 300px;
   max-width: 500px;
   margin-bottom: 0px;
-  font-family: 'gotham', 'Arial Narrow', Arial, sans-serif;
+  font-family: "gotham", "Arial Narrow", Arial, sans-serif;
   color: white;
   font-size: 1rem;
   line-height: 1.4rem;
@@ -330,8 +402,8 @@ html {
   margin-top: -5px;
 }
 
-.duraciontarea{
-  display: block;
+.duraciontarea {
+  display: flex;
   overflow: visible;
   max-height: 300px;
   max-width: 500;
@@ -339,7 +411,7 @@ html {
   padding-right: 20px;
   padding-bottom: 10px;
   padding-left: 20px;
-  font-family: 'gotham', 'Arial Narrow', Arial, sans-serif;
+  font-family: "gotham", "Arial Narrow", Arial, sans-serif;
   color: #f6905c;
   font-size: 1rem;
   line-height: 1.4rem;
@@ -348,16 +420,15 @@ html {
   text-transform: none;
 }
 
-.video{
+.video {
   max-width: 1100px;
   width: 1100px;
 }
 
-
 @font-face {
   font-family: "gotham";
-  src: url('./Gotham-Book.woff') format('woff'),
-       url('./Gotham-Book.woff2') format('woff2'),
-       url('./Gotham-Book.ttf') format('truetype');
+  src: url("./Gotham-Book.woff") format("woff"),
+    url("./Gotham-Book.woff2") format("woff2"),
+    url("./Gotham-Book.ttf") format("truetype");
   font-weight: normal;
 }
