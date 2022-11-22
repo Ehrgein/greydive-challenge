@@ -1,13 +1,363 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  min-height: 100%;
+  font-family:'Arial,'Helvetica Neue',Helvetica,sans-serif';
+  background: #ffff;
+  padding-top: 0;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+  box-sizing: border-box;
+  display: block;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+.homepagediv{
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(180deg,#131313,#292929 100%,#292929);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.homepagecontainer{
+  min-width: 1100px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  flex-direction: column;
+}
+
+.homenav{
+  max-width: 1100px;
+  width: 1100px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.testingmessage{
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: 'gotham', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 200px;
+  font-size: 20px;
+}
+
+.testlist{
+  margin-top: 40px;
+  font-family: 'gotham', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  max-width: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.testcontainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-width: 1100px;
+  width: 1100px;
+}
+
+.testclient{
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+.gototest{
+  background-color: #d4145a;
+  width: 150px;
+  font-family: 'gotham', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  border: 0;
+  height: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+.link{
+  text-decoration: none;
+  color: white;
+}
+
+
+.navitems{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  color: white;
+}
+
+.itemcontainer{
+  height: 40px;
+  padding-right: 20px;
+}
+
+.navitem{
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'gotham', 'Arial Narrow', Arial, sans-serif;
+  width: auto;
+  height: auto;
+}
+
+.navitem:hover{
+  color: #d4145a;
+}
+
+.conversemoscontainer{
+  width: 150px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 1.05rem;
+  text-align: center;
+  height: 40px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: #d4145a;
+}
+
+.conversemosbutton{
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: 'gotham', 'Arial Narrow', Arial, sans-serif;
+  width: auto;
+  height: auto;
+}
+
+.homeimage{
+  width: 170px;
+  height: 36px;
+}
+
+
+
+.title {
+  background-color: #292643;
+  overflow: hidden;
+  height: auto;
+  object-fit: fill;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.containermenu{
+  width: 1100px;
+  max-width: 1100px;
+  margin-right: 0;
+  margin-left: -19px;
+  padding-bottom: 20px;
+}
+
+.navbar{
+  display: inline-block;
+  min-width: 1100px;
+  margin-right: 0;
+}
+
+.navbartext{
+  position: relative;
+  float: left;
+  text-decoration: none;
+  color:white;
+  color: #f2f2f2;
+  font-weight: 800;
+}
+
+.logoimg{
+  width: 170px;
+  height: 33px;
+  padding-top: 50px;
+}
+
+.testingcontent{
+    background-color: #292643;
+    overflow: hidden;
+    max-width: 100%;
+    padding-bottom: 140px;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(180deg,#292643,#41416d);
+}
+
+.testdata{
+  padding-top: 80px;
+  width: 1100px;
+  max-width: 1100px;
+  margin-right: 0;
+  margin-left: -19px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.clientname{
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  line-height: 44px;
+}
+
+.testername{
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  line-height: 44px;
+}
+
+
+.transcription{
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 44px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.transcriptiontxt{
+  color: white;
+  max-width: 600px;
+  max-height: 300px;
+  margin-bottom: 40px;
+  padding-right: 50px;
+  padding-bottom: 60px;
+  padding-left: 50px;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  font-size: 16px;
+  line-height: 1.4rem;
+  font-size: 400;
+  font-family: 'gotham', 'Arial Narrow', Arial, sans-serif;
+  white-space: pre-wrap; 
+  text-decoration: none;
+  text-transform: none;
+}
+
+
+.tareas {
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 44px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.infotarea{
+    display: block;
+    overflow: visible;
+    max-height: 300px;
+    max-width: 500;
+    margin-bottom: 0px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    font-family: 'gotham', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: none;
+    border-style: solid none none;
+    border-width: 1px 1px 1px 0;
+    border-color: #fff #000 #000 #2e2e2e;
+    margin-top: 20px;
+    padding: 20px 20px 0;
+    white-space: pre-wrap;
+}
+
+.taskcontainer{
+  max-width: 500px;
+}
+
+.respuesta{
+  display: block;
+  overflow: visible;
+  max-height: 300px;
+  max-width: 500;
+  margin-bottom: 0px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-family: 'gotham', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: none;
+  padding: 20px 20px 0;
+  margin-top: -5px;
+}
+
+
+.escenario{
+  display: block;
+  overflow: visible;
+  max-height: 300px;
+  max-width: 500px;
+  margin-bottom: 0px;
+  font-family: 'gotham', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: none;
+  margin-top: -5px;
+}
+
+.duraciontarea{
+  display: block;
+  overflow: visible;
+  max-height: 300px;
+  max-width: 500;
+  margin-bottom: 0px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  font-family: 'gotham', 'Arial Narrow', Arial, sans-serif;
+  color: #f6905c;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.video{
+  max-width: 1100px;
+  width: 1100px;
+}
+
+
+@font-face {
+  font-family: "gotham";
+  src: url('./Gotham-Book.woff') format('woff'),
+       url('./Gotham-Book.woff2') format('woff2'),
+       url('./Gotham-Book.ttf') format('truetype');
+  font-weight: normal;
 }
